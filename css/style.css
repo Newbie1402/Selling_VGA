@@ -1,0 +1,686 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wrapper {
+    height: auto;
+    width: 100%;
+    ;
+    display: flex;
+    flex-direction:column;
+}
+
+.header {
+    background: url('../image/banner1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 60px;
+    border: 1px solid black;
+    height: 60px;
+    width: 100%;
+    margin:0px;
+}
+
+/* menu */
+
+/* .menu {
+    border: 1px solid black;
+    height: 80px;
+    background-image: linear-gradient(to right bottom, blue, rgb(0, 106, 255), rgb(0, 200, 255));
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+.menu > .list_menu  li{
+    display:inline-block;
+    padding-top: 20px;
+    align-items: center;
+    padding-bottom: 10px;
+
+}  
+
+.menu > .list_menu > li > a{
+    display:block ;
+    height: 40px;
+}
+
+.menu > .list_menu {
+    padding:0px ; 
+    margin:0px  ;
+    list-style: none;  ;
+    border-radius:3px;  
+    text-align:center ;
+}
+
+.menu > .list_menu > li > a{  
+    text-decoration:none  ;
+    font-variant:bold;  
+    font-size:larger  ;
+    
+    color: black  ;
+    padding:0 10px ; 
+    line-height:40px ; 
+}
+ 
+.menu>ul>li>a:hover{ 
+    color: blue ;
+}
+
+.menu ul li{  
+    position:relative;
+} 
+
+.menu ul ul{
+    position:absolute ; 
+    display:none  ;
+
+    padding:0px;  
+    margin:0px  ;
+    list-style:none; 
+    border-radius:3px;  
+    width:200px  ;
+    background-color:white ;  
+    box-shadow:0 0 1px gray ; 
+}
+.menu > .list_menu ul a{ 
+    display:block ;
+    line-height:30px  ;
+    color: black  ;
+    text-decoration:none;  
+    font-variant:bold ; 
+    font-size:larger  ;
+    padding:0 10px  ;
+}
+
+.menu > .list_menu a:hover{   
+    color:#09F ;
+}
+
+.menu > .list_menu li:hover ul{
+    display:block 
+
+}
+
+ #logo {
+    margin-right: auto;
+}
+ */
+
+ .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, blue, rgb(0, 106, 255), rgb(0, 200, 255));
+    font-family: 'Roboto Mono', monospace;
+}
+
+.list_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.nav-right li {
+    margin-left: 20px;
+}
+
+.nav-right ul {
+    display: none;
+    background-color: #0284db;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-right ul li {
+    width: 115px;
+    padding:2px;
+    margin-top: 10px;
+    margin-left: -25px;
+}
+
+#search form {
+    display: flex;
+    align-items: center;
+}
+
+#search input[type="search"] {
+        padding: 8px 12px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        outline: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: border-color 0.3s ease-in-out;
+        width: 800px;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+}
+
+.search-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ul ul {
+    display: none;
+    position: absolute;
+}
+
+li:hover ul {
+    display: block;
+    color: white;
+}
+
+
+/* sidebar */
+
+.sidebar{
+    float: left;
+    height: auto;
+    width: 13%;
+
+}
+.sidebar>.list_sidebar h4{
+    margin-left: 10px;
+}
+
+.sidebar>.list_sidebar {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    line-height: 25px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.sidebar>.list_sidebar li:hover {
+    
+    background-color: rgb(7, 118, 237);
+    background-size: 15%;
+}
+
+.sidebar>.list_sidebar li a {
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    display: block ;
+}
+.sidebar>.list_sidebar li {
+    margin: 7px;
+    padding: 2px;
+}
+
+
+/* main */
+
+.main{
+    height: auto;
+    width: 86%;
+    float: right;
+}
+
+.main > .list_main {
+    padding: 0;
+    margin: 0;
+}
+.main > .list_main li {
+    width: 16%;
+    height: auto;
+    border: 1.5px solid orange;
+    box-shadow: 2px 2px #00A4BD, 3px 3px #FF7A59;
+    list-style: none;
+    border-radius: 8px;
+    margin-left: 3px;
+    margin-top: 3px;
+    float: left;
+    
+}
+
+.main > .list_main li:hover {
+    background-color: rgb(0, 200, 255);
+    box-shadow: 2px 2px #00A4BD, 3px 3px #FF7A59;
+    border-radius: 8px;
+
+
+}
+
+.main > .list_main li:hover h4{
+    color: green;
+
+}
+
+
+.main > .list_main img {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+}
+
+.main > .list_main p {
+    text-align: center;
+    color: red;
+    
+}
+
+.main > .list_main h4 {
+
+    text-align: left;
+    margin: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+
+}
+
+.main > .list_main a{
+    text-decoration: none;
+}
+
+
+
+/* footer */
+.footer{
+    background-image: linear-gradient(to right bottom, blue, rgb(0, 106, 255), rgb(0, 200, 255));
+    border: 1px solid black;
+    height: auto;
+    width: 100%;
+    float: inline-start;
+    text-align: center;
+    color:aliceblue;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.footer table {
+    width: 60%;
+    text-align: left;
+    margin-left:50px;
+    float: left;
+}
+
+.logofooter{
+    float: right;
+    width: 30%;
+
+}
+
+.titlefooter {
+    font-size: 20px;
+    color: orangered;
+    margin-bottom: 20px;
+}
+
+.footer th {
+    width: 25%;
+}
+/* Chi tiết sản phẩm */
+
+.wrapper_chitiet {
+    
+    height: auto;
+    width: 86%;
+    margin-top: 0 ;
+
+    float: right;
+
+
+}
+
+.wrapper_chitiet>.hinhanh {
+    text-decoration: none;
+    
+}
+
+.wrapper_chitiet>.hinhanh img {
+    width: 15%;
+    height: 80%;
+    border: 2px solid yellowgreen;
+    padding: 10px;
+    box-shadow: 2px 2px #00A4BD, 4px 4px #FF7A59, 6px 6px #334758;
+    float: left;
+    margin: 10px;
+}
+
+.wrapper_chitiet>form {
+    float: right;
+    width: 79%;
+}
+.noidung {
+
+    margin-left: 20px;
+    color: red;
+}
+
+.gia {
+
+    margin-left: 6px;
+    color: red;
+    font-size: 25px;
+    
+}
+
+.soluong {
+    font-size: 15px;
+}
+.hang {
+    font-size: 15px;
+}
+.baohanh {
+    font-size: 15px;
+}
+.themgiohang input{
+    padding: 18px;
+    background-image: linear-gradient(to right bottom, blue, rgb(0, 106, 255), rgb(0, 200, 255));
+    box-shadow: 2px 2px #2e07c8, 4px 4px #FF7A59;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.themgiohang input:hover{
+    background-color: red;
+   
+}
+
+/* .giohang {
+    height: auto;
+    width: 86%;
+    margin-top: 0 ;
+    float:right;
+
+} */
+
+
+
+
+/* //tap */
+/* Tabs */
+.tabs {
+    width: 100%;
+    background-color: #09F;
+    border-radius: 5px 5px 5px 5px;
+  }
+ul#tabs-nav {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    overflow: auto;
+  }
+ul#tabs-nav li {
+    float: left;
+    font-weight: bold;
+    margin-right: 2px;
+    padding: 8px 10px;
+    border-radius: 5px 5px 5px 5px;
+    /*border: 1px solid #d5d5de;
+    border-bottom: none;*/
+    cursor: pointer;
+  }
+ul#tabs-nav li:hover,
+ul#tabs-nav li.active {
+    background-color: #08E;
+  }
+  #tabs-nav li a {
+    text-decoration: none;
+    color: #FFF;
+  }
+.tab-content {
+    padding: 10px;
+    border: 5px solid #09F;
+    background-color: #FFF;
+  }
+  
+
+
+
+
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0px;
+}
+
+
+
+.wrapper {
+	display: table-cell;
+
+	vertical-align: middle;
+}
+
+.nav {
+	margin-top: 40px;
+}
+
+.pull-right {
+	float: right;
+}
+
+a, a:active {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #999;
+}
+
+/* Breadcrups CSS */
+
+.arrow-steps .step {
+	font-size: 14px;
+	text-align: center;
+	color: #666;
+	cursor: default;
+	margin: 0 3px;
+	padding: 10px 10px 10px 30px;
+	min-width: 180px;
+	float: left;
+	position: relative;
+	background-color: #d9e3f7;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+  transition: background-color 0.2s ease;
+}
+
+.arrow-steps .step:after,
+.arrow-steps .step:before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	right: -17px;
+	width: 0;
+	height: 0;
+	border-top: 19px solid transparent;
+	border-bottom: 17px solid transparent;
+	border-left: 17px solid #d9e3f7;	
+	z-index: 2;
+  transition: border-color 0.2s ease;
+}
+
+.arrow-steps .step:before {
+	right: auto;
+	left: 0;
+	border-left: 17px solid #fff;	
+	z-index: 0;
+}
+
+.arrow-steps .step:first-child:before {
+	border: none;
+}
+
+.arrow-steps .step:first-child {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.arrow-steps .step span {
+	position: relative;
+}
+
+.arrow-steps .step span:before {
+	opacity: 0;
+	content: "✔";
+	position: absolute;
+	top: -2px;
+	left: -20px;
+}
+
+.arrow-steps .step.done span:before {
+	opacity: 1;
+	-webkit-transition: opacity 0.3s ease 0.5s;
+	-moz-transition: opacity 0.3s ease 0.5s;
+	-ms-transition: opacity 0.3s ease 0.5s;
+	transition: opacity 0.3s ease 0.5s;
+}
+
+.arrow-steps .step.current {
+	color: #fff;
+	background-color: #23468c;
+}
+
+.arrow-steps .step.current:after {
+	border-left: 17px solid #23468c;	
+}
+
+
+/* Đăng nhập  */ 
+.dangnhap {
+    
+    float: right;
+    width: 86%;
+    align-items: center;
+    
+
+
+}
+
+.dangnhap form {
+    
+
+    padding: 5% 30%;
+    width: 360px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.dangnhap table {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    background-color: rgb(242, 229, 229);
+}
+
+.dangnhap input {
+    border: 1px solid gray;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 8px 12px;
+    width: 200px;
+
+}
+
+#loginbutton input {
+    background-color: #00A4BD;
+    font-family: 'Roboto Mono', monospace;
+    box-shadow: 1px 1px #00A4BD, 2px 2px #FF7A59
+}
+
+#loginbutton input:hover {
+    background-color: blue;
+    box-shadow: 1px 1px #00A4BD, 1.5px 1.5px #FF7A59
+}
+
+/* dang ki  */
+.dangki {
+    
+    float: right;
+    width: 86%;
+    align-items: center;
+    
+
+
+}
+
+.dangki form {
+    
+
+    padding: 2% 20%;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.dangki table {
+    width: 50%;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: rgb(242, 229, 229);
+}
+
+.dangki input {
+    border: 1px solid gray;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 8px 12px;
+    width: 400px;
+    
+
+}
+
+#rbutton input {
+
+    background-color: #00A4BD;
+    font-family: 'Roboto Mono', monospace;
+    box-shadow: 1px 1px #00A4BD, 2px 2px #FF7A59;
+    width: 200px;
+}
+
+#rbutton input:hover {
+    background-color: blue;
+    box-shadow: 1px 1px #00A4BD, 1.5px 1.5px #FF7A59;
+}
