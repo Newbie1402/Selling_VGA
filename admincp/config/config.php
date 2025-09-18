@@ -1,6 +1,6 @@
 <?php
-$host = 'localhost'; // or the IP address of the MySQL server
-$port = '3307'; // the port number
+$host = 'mysql'; // Sử dụng tên service trong docker-compose
+$port = '3306'; // Port mặc định bên trong container MySQL là 3306
 $username = 'root';
 $password = '';
 $database = 'htvga';
